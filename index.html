@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruthika N S - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #33064f, #8304eb);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: transparent !important;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #about {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+            text-align: center;
+        }
+        #about h2 {
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        #about .btn-primary {
+            margin-top: 20px;
+        }
+        #education {
+            padding: 50px 0;
+            text-align: center;
+        }
+        #education h2 {
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        #certifications {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+            text-align: center;
+        }
+        #certifications h2 {
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        #skills {
+            padding: 50px 0;
+            text-align: center;
+        }
+        #skills h2 {
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #skills ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        #projects {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+        }
+        #projects h2 {
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: .25rem;
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+        }
+        .card-title {
+            color: #fff;
+            font-weight: bold;
+        }
+        .card-text {
+            color: #ccc;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+        }
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Profile picture and name -->
+        <a class="navbar-brand" href="#">
+            <img src="images/kruthika.jpg" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+            Kruthika N S
+        </a>
+        <!-- Hamburger menu for mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>As a budding software engineer driven by a passion for continual learning and advancement, I am deeply committed to enhancing my programming skills and problem-solving prowess. 
+            While I am still in the process of completing my formal education, I am eager to dive into real-world software development experiences. My keen interest lies in collaborating with teams and playing an active role in delivering high-quality software solutions. 
+            I am steadfast in my determination to seize opportunities for growth in a dynamic environment. As a newcomer to the field, my aim is to accumulate valuable experience and contribute meaningfully to innovative projects and collaborative teams.</p>
+        <!-- Button to view resume -->
+        <a href="Kruthika's Resume.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+        <!-- Social media icons -->
+        <div class="mt-3 social-icons">
+            <a href="https://github.com/Kruthi2025" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/kruthika-n-s-252118269/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <!-- Add email and phone icons here -->
+            <a href="mailto:kruthi2025@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="tel:+917411370972" target="_blank"><i class="fas fa-phone fa-2x"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="row">
+            <!-- High School -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SSLC</h5>
+                        <p class="card-text">Govt. JuniorCollege</p>
+                        <p class="card-text">Percentage: 85.44%</p>
+                    </div>
+                </div>
+            </div>
+            <!-- class 12 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pre-University</h5>
+                        <p class="card-text">Vishwachetana PU College</p>
+                        <p class="card-text">Percentage: 83.55%<p>
+                    </div>
+                </div>
+            </div>
+            <!-- Undergraduate -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Engineering(2020- 2024)</h5>
+                        <p class="card-text">East West Institute of Technology, Bengaluru</p>
+                        <p class="card-text">CGPA: 8.15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="row">
+            <!-- Certification 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/database.jpeg" class="card-img-top" alt="Certification 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Databases and SQL for Data Science with Python</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/python.jpeg" class="card-img-top" alt="Certification 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Python 3 Programming</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Certification 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/data structures.jpeg" class="card-img-top" alt="Certification 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Data Structures</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-code"></i> C Programming</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fas fa-database"></i> Data Structures</li>
+            <li><i class="fas fa-file-excel"></i> M S Office</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <!-- Portfolio items will go here -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/first aid.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">First Aid Application Using Android Studio</h5>
+                        <p class="card-text">I developed a First Aid application using Android Studio to
+                            empower users with essential life-saving knowledge. It provides
+                            step-by-step guidance for common emergencies like CPR, burns. With a user- friendly interface and concise instructions. I aimed to make first aid accessible to everyone, ensuring quick and effective
+                            response in critical situations.
+                            I have used Android Studio for developing the Project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/automobile-spare-parts-software.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto Spare Parts Management</h5>
+                        <p class="card-text">Auto spare parts management system is a web application platform
+                            where the marketing people can use it where the person in the office can sell the automobile parts. The person in the office can
+                            have the records of the total sales of the Automobile parts in the office. There are two types of people in the office can work in this application one of them is a Manager and the other is Cashier.
+                            I have used the SQL and HTML for developing the project. The SQL
+                            is being used for the backend and for the frontend I have used the HTML.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/HR employee.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HR Employee</h5>
+                        <p class="card-text">Predicting HR employees' performance and turnover using machine
+                            learning is pivotal for optimizing workforce management and
+                            enhancing talent retention. This approach leverages data-driven
+                            insights for informed HR decision-making. Evaluate the model's performance using relevant metrics. Deploy the model in the HR environment, integrating it with
+                            existing systems. Monitor and maintain the model's accuracy over time.
+                            I have used the Jupyter notebook as the platform for the execution of the project and I have coded this project in the Python Programming language
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat this structure for each portfolio item -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <!-- Contact Information -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="mt-4">
+                    <p><strong>Contact Information:</strong></p>
+                    <p>Email: kruthi2025@gmail.com</p>
+                    <p>Phone: +91 7411370972</p>
+                    <p>Address: Bengaluru, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
